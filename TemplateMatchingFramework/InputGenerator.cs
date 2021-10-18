@@ -4,10 +4,11 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using TemplateMatchingFramework.Input;
+using TemplateMatchingFramework.Match;
 using TemplateMatchingFramework.Result;
 using TemplateMatchingFramework.ResultProcessor;
 
-namespace TemplateMatchingFramework.Match
+namespace TemplateMatchingFramework
 {
     public class ImageProcessor : IDisposable
     {

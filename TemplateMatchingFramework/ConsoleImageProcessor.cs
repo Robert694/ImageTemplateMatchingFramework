@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Diagnostics;
 using TemplateMatchingFramework.Input;
+using TemplateMatchingFramework.Match;
 using TemplateMatchingFramework.Result;
 using TemplateMatchingFramework.ResultProcessor;
 
-namespace TemplateMatchingFramework.Match
+namespace TemplateMatchingFramework
 {
     public class ConsoleImageProcessor : ImageProcessor
     {

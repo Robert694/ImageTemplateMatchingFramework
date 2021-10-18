@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using TemplateMatchingFramework;
 using TemplateMatchingFramework.Match;
 using TemplateMatchingFramework.ResultProcessor;
 

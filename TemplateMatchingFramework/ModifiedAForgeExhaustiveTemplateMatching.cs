@@ -345,7 +345,7 @@ namespace TemplateMatchingFramework
 
                     // templates similarity
                     int sim = maxDiff - dif;
-                    MapResult[y + 2, x + 2] = (float) sim / maxDiff;//TODO: This line probably reduces performance a little
+                    MapResult[y + 2, x + 2] = (float) sim / maxDiff;//Note: This line probably reduces performance a little
                     if (sim >= threshold)
                         map[y + 2, x + 2] = sim;
                 });
