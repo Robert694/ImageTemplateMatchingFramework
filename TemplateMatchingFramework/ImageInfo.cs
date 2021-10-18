@@ -21,15 +21,6 @@ namespace TemplateMatchingFramework
 
         public Vector4[] SubVector(int x, int y, int width, int height)
         {
-            //This is wrong and honestly dont even know why
-            //int start = x * width + y;
-            //int end = start + (width*height);
-            //if (end > Values.Length) end = Values.Length;
-            //int count = end - start;
-            //var result = new Vector4[count];
-            //Array.Copy(Values, result, count);
-            //return result;
-
             var values = new Vector4[width*height];
             int count = 0;
             for (int xx = x; xx < width; xx++)
