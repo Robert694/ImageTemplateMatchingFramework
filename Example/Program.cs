@@ -17,7 +17,7 @@ namespace Example
                 OptimizeSmoothing = true,
                 Difference = ParallelTemplateMatching.DifferenceType.Manhattan
             }; // Match processor we're using
-            //matchProcessor = new MatchAForge(){MaxDegreeOfParallelism = 12};
+            //matchProcessor = new AForgeExhaustiveTemplateMatching() { MaxDegreeOfParallelism = 12 };
             //matchProcessor = new CachedMatchProcessor(matchProcessor); //Convert match processor into a cached variant
             IMatchResultProcessor resultProcessor = new ConsoleMultiResultProcessor( //define result processor
                 new DefaultResultProcessor(), //Saves images as is
