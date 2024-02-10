@@ -4,7 +4,7 @@ namespace TemplateMatchingFramework
 {
     public static class ImageExtensions
     {
-        public static Image Overlay(this Image input, Image overlay, Point point)
+        public static System.Drawing.Image Overlay(this System.Drawing.Image input, System.Drawing.Image overlay, Point point)
         {
             var clone = new Bitmap(input.Width, input.Height);
             using Graphics g = Graphics.FromImage(clone);
@@ -13,19 +13,19 @@ namespace TemplateMatchingFramework
             return clone;
         }
 
-        public static void DrawRectangle(this Image input, Rectangle rect)
+        public static void DrawRectangle(this System.Drawing.Image input, Rectangle rect)
         {
             using Graphics g = Graphics.FromImage(input);
             g.DrawRectangle(new Pen(Color.Red, 3), rect);
         }
 
-        public static Image Crop(this Image image, Rectangle cropArea)
+        public static System.Drawing.Image Crop(this System.Drawing.Image image, Rectangle cropArea)
         {
             var bmpImage = (Bitmap)image;
             return bmpImage.Clone(cropArea, bmpImage.PixelFormat);
         }
 
-        public static Image Crop(this Bitmap image, Rectangle cropArea)
+        public static System.Drawing.Image Crop(this Bitmap image, Rectangle cropArea)
         {
             return image.Clone(cropArea,image.PixelFormat);
         }

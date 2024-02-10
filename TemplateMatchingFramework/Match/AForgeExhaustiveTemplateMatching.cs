@@ -31,7 +31,7 @@ namespace TemplateMatchingFramework.Match
                 : new TemplateMatchResult(result.Rectangle.Location, result.Similarity, tm);
         }
 
-        private static Bitmap ConvertToFormat(Image image, PixelFormat format)
+        private static Bitmap ConvertToFormat(System.Drawing.Image image, PixelFormat format)
         {
             var copy = new Bitmap(image.Width, image.Height, format);
             using var gr = Graphics.FromImage(copy);
